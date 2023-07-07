@@ -106,11 +106,13 @@ function App() {
                   <p>{data.text}</p>
                 </div>
                 <div className="right">
+                  {data.status? '':
                   <i
                     className="fa-solid fa-pen-to-square"
                     title="Edit"
                     onClick={() => editItem(data.id)}
                   ></i>
+                  }
                   <i
                     className="fa-solid fa-trash"
                     title="Remove"
